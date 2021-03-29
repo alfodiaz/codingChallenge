@@ -4,7 +4,9 @@ Including also buttons examples, text box and autocomplete combo box with famous
 
 To install dependencies:
 - npm install 
+
 To run this project:
 - npm start
+
 To run tests:
 - npm run test --watch 
