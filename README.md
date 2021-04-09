@@ -3,8 +3,10 @@ This project has been developed with the newest technologies, utilizing react.js
 Including also buttons examples, text box and autocomplete combo box with famous artists.
 
 To install dependencies:
-npm install
+- npm install 
+
 To run this project:
 - npm start
+
 To run tests:
 - npm run test --watch 
