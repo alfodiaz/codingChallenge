@@ -32,13 +32,10 @@ if(indexedDB != undefined){
       store.openCursor().onsuccess = function(event) {
         var cursor = event.target.result;
         if (cursor) {
-            artists.push(cursor.value);
-          console.log("artist:", cursor.value.name);
-          // alert("Name for SSN " + cursor.key + " is " + cursor.value.name);
+            artists.push(cursor.value.name);
           cursor.continue();
         }
         else {
-          //alert("No more entries!");
         }
       };
   
@@ -47,13 +44,9 @@ if(indexedDB != undefined){
       //var getBob = index.get(["Smith", "Bob"]);
   
       getMickJagger.onsuccess = function() {
-          console.log("Mick Jagger: ",getMickJagger.result.name);  // => "Mick Jagger"
       };
   
-     /* getBob.onsuccess = function() {
-          console.log(getBob.result.name.first);   // => "Bob"
-      };*/
-  
+    
       // Close the db when the transaction is done
       tx.oncomplete = function() {
           db.close();
